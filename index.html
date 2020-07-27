@@ -8,13 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Main CSS-->
     <link rel="stylesheet" href="main.css">
 
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/d1fa27085d.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
 
     <title>Terp Twins LLC</title>
   </head>
   <body>
+
+    <script>
+        var clicked = false;
+        function toggle(){
+            if(!clicked){
+                clicked = true;
+                document.getElementById("moreInfo").innerHTML = "More Info";
+                        }
+            else {
+                clicked = false;
+                document.getElementById("moreInfo").innerHTML = "Less Info";
+                }
+         }
+    </script>
+
     <!--Header-->
     <header id="header">
         <nav class="navbar navbar-expand-lg px-4">
@@ -87,7 +107,7 @@
                             <p class="card-text">When controlling the height of your canopy is everything,
                                 Lazy Jane's 3 inch profile allows for incredible convenience without stealing heavily from your vertical allowance.</p>
                             <p>
-                                <a class="btn" data-toggle="collapse" href="#card1" role="button" aria-expanded="false" aria-controls="collapseExample">More Info</a>                                   
+                                <a class="btn" data-toggle="collapse" href="#card1" role="button" aria-expanded="false" aria-controls="collapseExample"><button id="moreInfo" class="btn">More Info</button></a>                                   
                             </p>
                             <div class="collapse" id="card1">
                                 <div id="cardHiddenBorder" class="card">
@@ -95,6 +115,7 @@
                                         <li>Lazy Jane's all wood top and base are both 1 inch thick to ensure durability while staying very low to the ground.</li>
                                         <br>
                                         <li>The Lazy Jane 12 inch ball bearing turntable adds an additional 3/8 of an inch bring Lazy Janes finaly height to 2 and 3/8 inches.</li>
+                                        <br>
                                         <li>Lazy Jane gives you the convenience of easily feeding and rotating your plants without your canopy space suffering.</li>
                                     </ul>
                                 </div>
@@ -110,14 +131,16 @@
                             <h5 class="card-title">Built to last!</h5>
                             <p class="card-text">Lazy Janes rotating wooden base is organically sealed and wrapped in Mylar to ensure UV and moisture protection. Lazy Jane's plastic trellis frame is designed to be used again and again for supporting and training your canopy.</p>
                             <p>
-                                <a class="btn" data-toggle="collapse" href="#card2" role="button" aria-expanded="false" aria-controls="collapseExample">More Info</a>                                   
-                            </p>
+                                <a class="btn" data-toggle="collapse" href="#card2" role="button" aria-expanded="false" aria-controls="collapseExample"><button id="moreInfo" class="btn">More Info</button></a>                                   
+                            </p>                      
+
                             <div class="collapse" id="card2">
                                 <div id="cardHiddenBorder" class="card">
                                     <ul>
                                         <li>Lazy Jane's rotating base is made of kiln dried pine and organically sealed with boiled linseed oil to ensure the longevity of the build.</li>
                                         <br>
                                         <li>Lazy Jane's 12 inch ball bearing turntable is zinc plated to help resist corrosion and has a maximum rating of 1000lbs.</li>
+                                        <br>
                                         <li>Lazy Jane's trellis is made of a hard plastic polymer and wrapped in mylar tape to protect it from the environment.</li>
                                     </ul>                                      
                                 </div>
@@ -133,7 +156,7 @@
                             <h5 class="card-title">Convenience Meets Efficiency</h5>
                             <p class="card-text">Lazy Jane's innovative circular trellis allows your canopy to be tied down while maintaining the mobility and convenience the turntables provide for feeding.</p>
                             <p>
-                                <a class="btn" data-toggle="collapse" href="#card3" role="button" aria-expanded="false" aria-controls="collapseExample">More Info</a>                                   
+                                <a class="btn" data-toggle="collapse" href="#card3" role="button" aria-expanded="false" aria-controls="collapseExample"><button id="moreInfo" class="btn">More Info</button></a>                                   
                             </p>
                             <div class="collapse" id="card3">
                                 <div id="cardHiddenBorder" class="card">

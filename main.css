@@ -147,6 +147,14 @@ html, body { overflow-x: hidden; }
 #cardHiddenBorder {
     border: none;
 }
+
+#moreInfo {
+    color: blue;
+    border: none;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+}
 /*============END CARD STYLES============*/
 
 /*============CONTACT STYLES============*/
